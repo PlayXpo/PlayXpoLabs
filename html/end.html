@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFCD00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      padding: 40px;
+      background: #FFCD00;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .circle {
+      background-color: #5a491a;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .checkmark {
+      font-size: 100px;
+      color: black;
+    }
+    .message {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .tag {
+      background-color: white;
+      color: black;
+      padding: 4px 8px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .email {
+      font-size: 16px;
+      color: #333;
+    }
+    .email a {
+      color: #000;
+      text-decoration: underline;
+    }
+    .cv a{
+      color: black;
+    }
+  </style>
+</head>
+<body onload="name()">
+  <div class="container">
+    <div class="circle">
+      <div class="checkmark">✔</div>
+    </div>
+    <div class="message">Thank you for showing interest!</div>
+    <div id="name" class="message"></div>
+    <div class="email">
+      Our team will reach to you, or you can mail us at<br>
+      <a href="mailto:contact@playxpo.com">contact@playxpo.com</a>
+      <br /><br />
+    </div>
+    <div class="cv">
+      we request you to please mail your cv on  <br /><a href="mailto:kunal@playxpo.com">kunal@playxpo.com</a>
+    </div>
+  </div>
+  <script  type="text/javascript" charset="utf-8">
+    let getname = localStorage.getItem('fname');
+    function name(){
+      document.getElementById('name').innerHTML=getname;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayXpo Form</title>
+  <link rel="stylesheet" href="../css/basic.css">
+  <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+  <form id="bas">
+  <div class="container">
+    <h2>1 &rarr; Basic Info Section *</h2>
+    <p class="description">Please Enter Valid Information and verify once before continuing.</p>
+
+    <label for="firstName">First name *</label>
+    <input name="fname" type="text" id="firstName" placeholder="First Name" required />
+
+    <label for="lastName">Last name *</label>
+    <input name="lname" type="text" id="lastName" placeholder="Last Name " required />
+
+    <label for="phone">Phone number *</label>
+    <div class="phone-field">
+      
+      <input id="phone" type="tel" name="phone" />
+    </div>
+
+    <label for="email">Email *</label>
+    <input name="email" type="email" id="email" placeholder="name@example.com" required />
+
+    
+    
+
+    <button type="submit"  class="button" >SUBMIT</button>
+    <div class="footer">Powered by <a class="a" href="#">PlayXpo</a></div>
+  </div>
+  </form>
+  <script type='module' src="../script/basic.js">
+
+
+
+</script>
+
+</body>
+</html>
