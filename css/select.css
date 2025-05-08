@@ -219,20 +219,22 @@
          font-weight: bold;
      }
 
-     .back-button {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
+     .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 
-     button {
-         padding: 10px 20px;
-         font-weight: bold;
-         border: none;
-         margin: 20px;
-         background-color: #000;
-         color: #fff;
-         border-radius: 6px;
-         cursor: pointer;
-         width: 90%;
-     }
+button {
+    
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    margin: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 90%;
+}
